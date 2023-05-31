@@ -1,4 +1,4 @@
-{% load django_bootstrap5 %}
+{% load bootstrap4 %}
 <!--<!Doctype html>-->
 <html lang="en">
 
@@ -10,20 +10,18 @@
   <title>Learning Log</title>
 
   {% bootstrap_css %}
-  {% bootstrap_javascript %}
+  {% bootstrap_javascript jquery='full' %}
 
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+  <nav class="navbar navbar-expand-md navbar-light bg-light mb-5 border">
 
-    <a class="navbar-brand" href="{% url 'learning_logs:index'%}">Learning Log</a>
+    <a class="navbar-brand" style="margin-left:15px;" href="{% url 'learning_logs:index'%}">Learning Log</a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse"
-        data-target="#navbarCollapse" aria-controls="navbarCollapse"
-        aria-expanded="false" aria-label="Toggle navigation">
-
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -60,7 +58,6 @@
 	    </ul>
 
 	  </div>
-
   </nav>
 
   <main role="main" class="container">

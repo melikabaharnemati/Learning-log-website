@@ -44,8 +44,7 @@ INSTALLED_APPS = [
     'users',
 
     # Third Party Apps
-    'bootstrap5',
-    'django_bootstrap5',
+    'bootstrap4',
 ]
 
 MIDDLEWARE = [
