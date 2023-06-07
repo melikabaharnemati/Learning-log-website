@@ -1,0 +1,4 @@
+Django
+bootstrap4
+django-bootstrap4
+psycopg2
